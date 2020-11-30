@@ -1,0 +1,19 @@
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
+
+
+#define READ A0 
+
+void setup()
+{
+	Serial.begin(9600);
+}
+
+void loop()
+{
+	int input = analogRead(READ);
+	Serial.println(input);
+}
+
+
+
